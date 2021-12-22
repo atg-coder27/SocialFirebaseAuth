@@ -87,13 +87,24 @@ WSGI_APPLICATION = 'FireBaseAuth.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'practice1', 
+#         'USER': 'postgres', 
+#         'PASSWORD': 'postgres',
+#         'HOST': '127.0.0.1', 
+#         'PORT': '5432',
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'practice1', 
         'USER': 'postgres', 
-        'PASSWORD': 'postgres',
-        'HOST': '127.0.0.1', 
+        'PASSWORD': 'admin',
+        'HOST': 'ec2-3-145-121-243.us-east-2.compute.amazonaws.com', 
         'PORT': '5432',
     }
 }
